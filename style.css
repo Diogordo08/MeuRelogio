@@ -1,0 +1,80 @@
+*{
+    font-family: 'MonoCraft', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.relogio{
+    color: #008f00;
+    filter: drop-shadow(0px 0px 10px #008f00);
+    text-align: center;
+    font-size: 105px;
+}
+
+.opcoes{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+}
+
+.opcoes button{
+    width: 150px;
+    background-color: #008f00;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    transition: .3s;
+}
+
+.opcoes button:hover{
+    background-color: #72008f;
+    color: #000;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0px 0px 10px #72008f;
+}
+
+.outras{
+    color: #fff;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.outras button{
+    width: 120px;
+    border: none;
+    transition: .3s;
+}
+
+.outras button:hover{
+    cursor: pointer;
+    width: 150px;
+}
+
+.outras .parar{
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.outras .parar:hover{
+    color: #ff0000;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.outras .resetar{
+    color: #000;
+    background-color: #fff;
+}
+
+.outras .resetar:hover{
+    color: #fff;
+    background-color: #979797;
+    box-shadow: 0px 0px 10px #979797;
+}

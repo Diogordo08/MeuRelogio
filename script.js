@@ -30,12 +30,12 @@ function atualizarCrono(){
 }
 
 function formatarTempo(){
-    const horas = Math.floor(milisegundos / (1000 * 60 * 60));
-    const minutos = Math.floor((milisegundos % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((milisegundos % (1000 * 60)) / 1000);
-    const milisecs = milisegundos % 1000;
+    const horas = Math.floor(milisegundos / (100 * 60 * 60));
+    const minutos = Math.floor((milisegundos % (100 * 60 * 60)) / (100 * 60));
+    const segundos = Math.floor((milisegundos % (100 * 60)) / 100);
+    const milisecs = milisegundos % 100;
 
-    return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2,'0')}:${milisecs.toString().padStart(3,'0')}`;
+    return `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2,'0')}:${milisecs.toString().padStart(2,'0')}`;
 }
 
 function cronometro(){
